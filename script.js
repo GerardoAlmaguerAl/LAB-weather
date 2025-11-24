@@ -20,5 +20,8 @@ async function handleFetchClick(){
 
     const currentWeather = await fetchWeatherData(latitude, longitude);
     currentTemperature.textContent = currentWeather.temperature;
+    this.disabled = true;
+
+
 
 }
